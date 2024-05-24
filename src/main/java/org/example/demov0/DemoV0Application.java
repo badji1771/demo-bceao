@@ -15,6 +15,6 @@ public class DemoV0Application {
 
 	@RequestMapping("/hello")
 	public String hello(){
-		return "Hello Bceao !!!";
+		return "Hello Bceao 24-05-2024!!!";
 	}
 }
