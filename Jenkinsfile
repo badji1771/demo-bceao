@@ -1,16 +1,5 @@
 pipeline {
     agent any
-
-    stages {
-        stage('Connect to GitHub') {
-            steps {
-                git (
-                    url: "git@github.com:badji1771/demo-bceao.git",
-                    branch: "main"
-                )
-            }
-        }
-
         stage('Build Artifact'){
             steps {
                 sh 'mvn clean package -DskipTests=true'
